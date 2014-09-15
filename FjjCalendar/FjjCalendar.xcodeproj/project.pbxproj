@@ -1,0 +1,745 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		EB7781E519C6818300F8697A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EB7781E419C6818300F8697A /* Foundation.framework */; };
+		EB7781E719C6818300F8697A /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EB7781E619C6818300F8697A /* CoreGraphics.framework */; };
+		EB7781E919C6818300F8697A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EB7781E819C6818300F8697A /* UIKit.framework */; };
+		EB7781EF19C6818300F8697A /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = EB7781ED19C6818300F8697A /* InfoPlist.strings */; };
+		EB7781F119C6818300F8697A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = EB7781F019C6818300F8697A /* main.m */; };
+		EB7781F519C6818300F8697A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = EB7781F419C6818300F8697A /* AppDelegate.m */; };
+		EB7781F819C6818300F8697A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EB7781F619C6818300F8697A /* Main.storyboard */; };
+		EB7781FD19C6818300F8697A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EB7781FC19C6818300F8697A /* Images.xcassets */; };
+		EB77820419C6818300F8697A /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EB77820319C6818300F8697A /* XCTest.framework */; };
+		EB77820519C6818300F8697A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EB7781E419C6818300F8697A /* Foundation.framework */; };
+		EB77820619C6818300F8697A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EB7781E819C6818300F8697A /* UIKit.framework */; };
+		EB77820E19C6818300F8697A /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = EB77820C19C6818300F8697A /* InfoPlist.strings */; };
+		EB77821019C6818300F8697A /* FjjCalendarTests.m in Sources */ = {isa = PBXBuildFile; fileRef = EB77820F19C6818300F8697A /* FjjCalendarTests.m */; };
+		EB77822019C6839600F8697A /* RECommonFunctions.m in Sources */ = {isa = PBXBuildFile; fileRef = EB77821B19C6839600F8697A /* RECommonFunctions.m */; };
+		EB77822119C6839600F8697A /* RESideMenu.m in Sources */ = {isa = PBXBuildFile; fileRef = EB77821D19C6839600F8697A /* RESideMenu.m */; };
+		EB77822219C6839600F8697A /* UIViewController+RESideMenu.m in Sources */ = {isa = PBXBuildFile; fileRef = EB77821F19C6839600F8697A /* UIViewController+RESideMenu.m */; };
+		EB77822519C683CC00F8697A /* LeftViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EB77822419C683CC00F8697A /* LeftViewController.m */; };
+		EB77822C19C6846400F8697A /* UIView+Additions.m in Sources */ = {isa = PBXBuildFile; fileRef = EB77822819C6846400F8697A /* UIView+Additions.m */; };
+		EB77822D19C6846400F8697A /* UIViewExt.m in Sources */ = {isa = PBXBuildFile; fileRef = EB77822B19C6846400F8697A /* UIViewExt.m */; };
+		EB77823519C6847400F8697A /* TenyeaBaseNavigationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EB77823019C6847400F8697A /* TenyeaBaseNavigationViewController.m */; };
+		EB77823619C6847400F8697A /* TenyeaBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EB77823219C6847400F8697A /* TenyeaBaseViewController.m */; };
+		EB77823A19C6853000F8697A /* RootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EB77823919C6853000F8697A /* RootViewController.m */; };
+		EB77824019C6882300F8697A /* FirstViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EB77823F19C6882300F8697A /* FirstViewController.m */; };
+		EB77824319C6920500F8697A /* SecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EB77824219C6920500F8697A /* SecondViewController.m */; };
+		EB77824619C692B000F8697A /* ThirdViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EB77824519C692B000F8697A /* ThirdViewController.m */; };
+		EB77824B19C6989200F8697A /* Date.m in Sources */ = {isa = PBXBuildFile; fileRef = EB77824A19C6989200F8697A /* Date.m */; };
+		EB77824E19C6D04400F8697A /* ZeroViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EB77824D19C6D04400F8697A /* ZeroViewController.m */; };
+		EB77825219C6D54F00F8697A /* weekdaysBarView.png in Resources */ = {isa = PBXBuildFile; fileRef = EB77825019C6D54F00F8697A /* weekdaysBarView.png */; };
+		EB77825319C6D54F00F8697A /* weekdaysBarView@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = EB77825119C6D54F00F8697A /* weekdaysBarView@2x.png */; };
+		EB77827619C6D55800F8697A /* JBCalendarDate.m in Sources */ = {isa = PBXBuildFile; fileRef = EB77825919C6D55800F8697A /* JBCalendarDate.m */; };
+		EB77827719C6D55800F8697A /* JBCalendarLogic.m in Sources */ = {isa = PBXBuildFile; fileRef = EB77825C19C6D55800F8697A /* JBCalendarLogic.m */; };
+		EB77827819C6D55800F8697A /* JBEventModel.m in Sources */ = {isa = PBXBuildFile; fileRef = EB77825E19C6D55800F8697A /* JBEventModel.m */; };
+		EB77827919C6D55800F8697A /* JBUnitGridView.m in Sources */ = {isa = PBXBuildFile; fileRef = EB77826019C6D55800F8697A /* JBUnitGridView.m */; };
+		EB77827A19C6D55800F8697A /* JBUnitTileView.m in Sources */ = {isa = PBXBuildFile; fileRef = EB77826219C6D55800F8697A /* JBUnitTileView.m */; };
+		EB77827B19C6D55800F8697A /* JBUnitView.m in Sources */ = {isa = PBXBuildFile; fileRef = EB77826419C6D55800F8697A /* JBUnitView.m */; };
+		EB77827C19C6D55800F8697A /* JBWeekdaysBarView.m in Sources */ = {isa = PBXBuildFile; fileRef = EB77826619C6D55800F8697A /* JBWeekdaysBarView.m */; };
+		EB77827D19C6D55800F8697A /* LunarCalendar.m in Sources */ = {isa = PBXBuildFile; fileRef = EB77826919C6D55800F8697A /* LunarCalendar.m */; };
+		EB77827E19C6D55800F8697A /* NSDate+Calendar.m in Sources */ = {isa = PBXBuildFile; fileRef = EB77826C19C6D55800F8697A /* NSDate+Calendar.m */; };
+		EB77827F19C6D55800F8697A /* README in Resources */ = {isa = PBXBuildFile; fileRef = EB77826D19C6D55800F8697A /* README */; };
+		EB77828019C6D55800F8697A /* JBBasicFileManager.m in Sources */ = {isa = PBXBuildFile; fileRef = EB77827119C6D55800F8697A /* JBBasicFileManager.m */; };
+		EB77828119C6D55800F8697A /* JBImageFileManager.m in Sources */ = {isa = PBXBuildFile; fileRef = EB77827319C6D55800F8697A /* JBImageFileManager.m */; };
+		EB77828219C6D55800F8697A /* JBPlistFileManager.m in Sources */ = {isa = PBXBuildFile; fileRef = EB77827519C6D55800F8697A /* JBPlistFileManager.m */; };
+		EB77828519C6D5BD00F8697A /* JBSXRCUnitTileView.m in Sources */ = {isa = PBXBuildFile; fileRef = EB77828419C6D5BD00F8697A /* JBSXRCUnitTileView.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		EB77820719C6818300F8697A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = EB7781D919C6818300F8697A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = EB7781E019C6818300F8697A;
+			remoteInfo = FjjCalendar;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		EB7781E119C6818300F8697A /* FjjCalendar.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FjjCalendar.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		EB7781E419C6818300F8697A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		EB7781E619C6818300F8697A /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		EB7781E819C6818300F8697A /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		EB7781EC19C6818300F8697A /* FjjCalendar-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "FjjCalendar-Info.plist"; sourceTree = "<group>"; };
+		EB7781EE19C6818300F8697A /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		EB7781F019C6818300F8697A /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		EB7781F219C6818300F8697A /* FjjCalendar-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "FjjCalendar-Prefix.pch"; sourceTree = "<group>"; };
+		EB7781F319C6818300F8697A /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		EB7781F419C6818300F8697A /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		EB7781F719C6818300F8697A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		EB7781FC19C6818300F8697A /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		EB77820219C6818300F8697A /* FjjCalendarTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FjjCalendarTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		EB77820319C6818300F8697A /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		EB77820B19C6818300F8697A /* FjjCalendarTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "FjjCalendarTests-Info.plist"; sourceTree = "<group>"; };
+		EB77820D19C6818300F8697A /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		EB77820F19C6818300F8697A /* FjjCalendarTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FjjCalendarTests.m; sourceTree = "<group>"; };
+		EB77821A19C6839600F8697A /* RECommonFunctions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RECommonFunctions.h; sourceTree = "<group>"; };
+		EB77821B19C6839600F8697A /* RECommonFunctions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RECommonFunctions.m; sourceTree = "<group>"; };
+		EB77821C19C6839600F8697A /* RESideMenu.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RESideMenu.h; sourceTree = "<group>"; };
+		EB77821D19C6839600F8697A /* RESideMenu.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RESideMenu.m; sourceTree = "<group>"; };
+		EB77821E19C6839600F8697A /* UIViewController+RESideMenu.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+RESideMenu.h"; sourceTree = "<group>"; };
+		EB77821F19C6839600F8697A /* UIViewController+RESideMenu.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+RESideMenu.m"; sourceTree = "<group>"; };
+		EB77822319C683CC00F8697A /* LeftViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LeftViewController.h; sourceTree = "<group>"; };
+		EB77822419C683CC00F8697A /* LeftViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LeftViewController.m; sourceTree = "<group>"; };
+		EB77822719C6846400F8697A /* UIView+Additions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Additions.h"; sourceTree = "<group>"; };
+		EB77822819C6846400F8697A /* UIView+Additions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Additions.m"; sourceTree = "<group>"; };
+		EB77822A19C6846400F8697A /* UIViewExt.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UIViewExt.h; sourceTree = "<group>"; };
+		EB77822B19C6846400F8697A /* UIViewExt.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UIViewExt.m; sourceTree = "<group>"; };
+		EB77822F19C6847400F8697A /* TenyeaBaseNavigationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TenyeaBaseNavigationViewController.h; sourceTree = "<group>"; };
+		EB77823019C6847400F8697A /* TenyeaBaseNavigationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TenyeaBaseNavigationViewController.m; sourceTree = "<group>"; };
+		EB77823119C6847400F8697A /* TenyeaBaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TenyeaBaseViewController.h; sourceTree = "<group>"; };
+		EB77823219C6847400F8697A /* TenyeaBaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TenyeaBaseViewController.m; sourceTree = "<group>"; };
+		EB77823819C6853000F8697A /* RootViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RootViewController.h; sourceTree = "<group>"; };
+		EB77823919C6853000F8697A /* RootViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RootViewController.m; sourceTree = "<group>"; };
+		EB77823E19C6882300F8697A /* FirstViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FirstViewController.h; sourceTree = "<group>"; };
+		EB77823F19C6882300F8697A /* FirstViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FirstViewController.m; sourceTree = "<group>"; };
+		EB77824119C6920500F8697A /* SecondViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SecondViewController.h; sourceTree = "<group>"; };
+		EB77824219C6920500F8697A /* SecondViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SecondViewController.m; sourceTree = "<group>"; };
+		EB77824419C692B000F8697A /* ThirdViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ThirdViewController.h; sourceTree = "<group>"; };
+		EB77824519C692B000F8697A /* ThirdViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ThirdViewController.m; sourceTree = "<group>"; };
+		EB77824719C694B800F8697A /* UtilDefine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UtilDefine.h; sourceTree = "<group>"; };
+		EB77824919C6989200F8697A /* Date.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Date.h; sourceTree = "<group>"; };
+		EB77824A19C6989200F8697A /* Date.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Date.m; sourceTree = "<group>"; };
+		EB77824C19C6D04400F8697A /* ZeroViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZeroViewController.h; sourceTree = "<group>"; };
+		EB77824D19C6D04400F8697A /* ZeroViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZeroViewController.m; sourceTree = "<group>"; };
+		EB77825019C6D54F00F8697A /* weekdaysBarView.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = weekdaysBarView.png; sourceTree = "<group>"; };
+		EB77825119C6D54F00F8697A /* weekdaysBarView@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "weekdaysBarView@2x.png"; sourceTree = "<group>"; };
+		EB77825719C6D55800F8697A /* JBCalendarDataSourceDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JBCalendarDataSourceDelegate.h; sourceTree = "<group>"; };
+		EB77825819C6D55800F8697A /* JBCalendarDate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JBCalendarDate.h; sourceTree = "<group>"; };
+		EB77825919C6D55800F8697A /* JBCalendarDate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JBCalendarDate.m; sourceTree = "<group>"; };
+		EB77825A19C6D55800F8697A /* JBCalendarDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JBCalendarDelegate.h; sourceTree = "<group>"; };
+		EB77825B19C6D55800F8697A /* JBCalendarLogic.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JBCalendarLogic.h; sourceTree = "<group>"; };
+		EB77825C19C6D55800F8697A /* JBCalendarLogic.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JBCalendarLogic.m; sourceTree = "<group>"; };
+		EB77825D19C6D55800F8697A /* JBEventModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JBEventModel.h; sourceTree = "<group>"; };
+		EB77825E19C6D55800F8697A /* JBEventModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JBEventModel.m; sourceTree = "<group>"; };
+		EB77825F19C6D55800F8697A /* JBUnitGridView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JBUnitGridView.h; sourceTree = "<group>"; };
+		EB77826019C6D55800F8697A /* JBUnitGridView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JBUnitGridView.m; sourceTree = "<group>"; };
+		EB77826119C6D55800F8697A /* JBUnitTileView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JBUnitTileView.h; sourceTree = "<group>"; };
+		EB77826219C6D55800F8697A /* JBUnitTileView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JBUnitTileView.m; sourceTree = "<group>"; };
+		EB77826319C6D55800F8697A /* JBUnitView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JBUnitView.h; sourceTree = "<group>"; };
+		EB77826419C6D55800F8697A /* JBUnitView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JBUnitView.m; sourceTree = "<group>"; };
+		EB77826519C6D55800F8697A /* JBWeekdaysBarView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JBWeekdaysBarView.h; sourceTree = "<group>"; };
+		EB77826619C6D55800F8697A /* JBWeekdaysBarView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JBWeekdaysBarView.m; sourceTree = "<group>"; };
+		EB77826819C6D55800F8697A /* LunarCalendar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LunarCalendar.h; sourceTree = "<group>"; };
+		EB77826919C6D55800F8697A /* LunarCalendar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LunarCalendar.m; sourceTree = "<group>"; };
+		EB77826B19C6D55800F8697A /* NSDate+Calendar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDate+Calendar.h"; sourceTree = "<group>"; };
+		EB77826C19C6D55800F8697A /* NSDate+Calendar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDate+Calendar.m"; sourceTree = "<group>"; };
+		EB77826D19C6D55800F8697A /* README */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README; sourceTree = "<group>"; };
+		EB77826E19C6D55800F8697A /* JBDefine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JBDefine.h; sourceTree = "<group>"; };
+		EB77827019C6D55800F8697A /* JBBasicFileManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JBBasicFileManager.h; sourceTree = "<group>"; };
+		EB77827119C6D55800F8697A /* JBBasicFileManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JBBasicFileManager.m; sourceTree = "<group>"; };
+		EB77827219C6D55800F8697A /* JBImageFileManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JBImageFileManager.h; sourceTree = "<group>"; };
+		EB77827319C6D55800F8697A /* JBImageFileManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JBImageFileManager.m; sourceTree = "<group>"; };
+		EB77827419C6D55800F8697A /* JBPlistFileManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JBPlistFileManager.h; sourceTree = "<group>"; };
+		EB77827519C6D55800F8697A /* JBPlistFileManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JBPlistFileManager.m; sourceTree = "<group>"; };
+		EB77828319C6D5BD00F8697A /* JBSXRCUnitTileView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JBSXRCUnitTileView.h; sourceTree = "<group>"; };
+		EB77828419C6D5BD00F8697A /* JBSXRCUnitTileView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JBSXRCUnitTileView.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		EB7781DE19C6818300F8697A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EB7781E719C6818300F8697A /* CoreGraphics.framework in Frameworks */,
+				EB7781E919C6818300F8697A /* UIKit.framework in Frameworks */,
+				EB7781E519C6818300F8697A /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EB7781FF19C6818300F8697A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EB77820419C6818300F8697A /* XCTest.framework in Frameworks */,
+				EB77820619C6818300F8697A /* UIKit.framework in Frameworks */,
+				EB77820519C6818300F8697A /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		EB7781D819C6818300F8697A = {
+			isa = PBXGroup;
+			children = (
+				EB7781EA19C6818300F8697A /* FjjCalendar */,
+				EB77820919C6818300F8697A /* FjjCalendarTests */,
+				EB7781E319C6818300F8697A /* Frameworks */,
+				EB7781E219C6818300F8697A /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		EB7781E219C6818300F8697A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				EB7781E119C6818300F8697A /* FjjCalendar.app */,
+				EB77820219C6818300F8697A /* FjjCalendarTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		EB7781E319C6818300F8697A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				EB7781E419C6818300F8697A /* Foundation.framework */,
+				EB7781E619C6818300F8697A /* CoreGraphics.framework */,
+				EB7781E819C6818300F8697A /* UIKit.framework */,
+				EB77820319C6818300F8697A /* XCTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		EB7781EA19C6818300F8697A /* FjjCalendar */ = {
+			isa = PBXGroup;
+			children = (
+				EB7781F319C6818300F8697A /* AppDelegate.h */,
+				EB7781F419C6818300F8697A /* AppDelegate.m */,
+				EB7781F619C6818300F8697A /* Main.storyboard */,
+				EB77823819C6853000F8697A /* RootViewController.h */,
+				EB77823919C6853000F8697A /* RootViewController.m */,
+				EB77824C19C6D04400F8697A /* ZeroViewController.h */,
+				EB77824D19C6D04400F8697A /* ZeroViewController.m */,
+				EB77823E19C6882300F8697A /* FirstViewController.h */,
+				EB77823F19C6882300F8697A /* FirstViewController.m */,
+				EB77824119C6920500F8697A /* SecondViewController.h */,
+				EB77824219C6920500F8697A /* SecondViewController.m */,
+				EB77824419C692B000F8697A /* ThirdViewController.h */,
+				EB77824519C692B000F8697A /* ThirdViewController.m */,
+				EB77822319C683CC00F8697A /* LeftViewController.h */,
+				EB77822419C683CC00F8697A /* LeftViewController.m */,
+				EB77824819C6986D00F8697A /* date */,
+				EB7781FC19C6818300F8697A /* Images.xcassets */,
+				EB7781EB19C6818300F8697A /* Supporting Files */,
+			);
+			path = FjjCalendar;
+			sourceTree = "<group>";
+		};
+		EB7781EB19C6818300F8697A /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				EB77824F19C6D53C00F8697A /* JBCalendar */,
+				EB77822E19C6847400F8697A /* baseViewController */,
+				EB77822619C6846400F8697A /* UIView+Additions */,
+				EB77822919C6846400F8697A /* UIViewExt */,
+				EB77821919C6839600F8697A /* RESideMenu */,
+				EB77824719C694B800F8697A /* UtilDefine.h */,
+				EB7781EC19C6818300F8697A /* FjjCalendar-Info.plist */,
+				EB7781ED19C6818300F8697A /* InfoPlist.strings */,
+				EB7781F019C6818300F8697A /* main.m */,
+				EB7781F219C6818300F8697A /* FjjCalendar-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		EB77820919C6818300F8697A /* FjjCalendarTests */ = {
+			isa = PBXGroup;
+			children = (
+				EB77820F19C6818300F8697A /* FjjCalendarTests.m */,
+				EB77820A19C6818300F8697A /* Supporting Files */,
+			);
+			path = FjjCalendarTests;
+			sourceTree = "<group>";
+		};
+		EB77820A19C6818300F8697A /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				EB77820B19C6818300F8697A /* FjjCalendarTests-Info.plist */,
+				EB77820C19C6818300F8697A /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		EB77821919C6839600F8697A /* RESideMenu */ = {
+			isa = PBXGroup;
+			children = (
+				EB77821A19C6839600F8697A /* RECommonFunctions.h */,
+				EB77821B19C6839600F8697A /* RECommonFunctions.m */,
+				EB77821C19C6839600F8697A /* RESideMenu.h */,
+				EB77821D19C6839600F8697A /* RESideMenu.m */,
+				EB77821E19C6839600F8697A /* UIViewController+RESideMenu.h */,
+				EB77821F19C6839600F8697A /* UIViewController+RESideMenu.m */,
+			);
+			path = RESideMenu;
+			sourceTree = "<group>";
+		};
+		EB77822619C6846400F8697A /* UIView+Additions */ = {
+			isa = PBXGroup;
+			children = (
+				EB77822719C6846400F8697A /* UIView+Additions.h */,
+				EB77822819C6846400F8697A /* UIView+Additions.m */,
+			);
+			path = "UIView+Additions";
+			sourceTree = "<group>";
+		};
+		EB77822919C6846400F8697A /* UIViewExt */ = {
+			isa = PBXGroup;
+			children = (
+				EB77822A19C6846400F8697A /* UIViewExt.h */,
+				EB77822B19C6846400F8697A /* UIViewExt.m */,
+			);
+			path = UIViewExt;
+			sourceTree = "<group>";
+		};
+		EB77822E19C6847400F8697A /* baseViewController */ = {
+			isa = PBXGroup;
+			children = (
+				EB77822F19C6847400F8697A /* TenyeaBaseNavigationViewController.h */,
+				EB77823019C6847400F8697A /* TenyeaBaseNavigationViewController.m */,
+				EB77823119C6847400F8697A /* TenyeaBaseViewController.h */,
+				EB77823219C6847400F8697A /* TenyeaBaseViewController.m */,
+			);
+			path = baseViewController;
+			sourceTree = "<group>";
+		};
+		EB77824819C6986D00F8697A /* date */ = {
+			isa = PBXGroup;
+			children = (
+				EB77824919C6989200F8697A /* Date.h */,
+				EB77824A19C6989200F8697A /* Date.m */,
+			);
+			name = date;
+			sourceTree = "<group>";
+		};
+		EB77824F19C6D53C00F8697A /* JBCalendar */ = {
+			isa = PBXGroup;
+			children = (
+				EB77828319C6D5BD00F8697A /* JBSXRCUnitTileView.h */,
+				EB77828419C6D5BD00F8697A /* JBSXRCUnitTileView.m */,
+				EB77825419C6D55800F8697A /* Library */,
+				EB77825019C6D54F00F8697A /* weekdaysBarView.png */,
+				EB77825119C6D54F00F8697A /* weekdaysBarView@2x.png */,
+			);
+			name = JBCalendar;
+			sourceTree = "<group>";
+		};
+		EB77825419C6D55800F8697A /* Library */ = {
+			isa = PBXGroup;
+			children = (
+				EB77825519C6D55800F8697A /* JustBen */,
+			);
+			path = Library;
+			sourceTree = "<group>";
+		};
+		EB77825519C6D55800F8697A /* JustBen */ = {
+			isa = PBXGroup;
+			children = (
+				EB77825619C6D55800F8697A /* JBCalendar */,
+				EB77826E19C6D55800F8697A /* JBDefine.h */,
+				EB77826F19C6D55800F8697A /* LocalFileManager */,
+			);
+			path = JustBen;
+			sourceTree = "<group>";
+		};
+		EB77825619C6D55800F8697A /* JBCalendar */ = {
+			isa = PBXGroup;
+			children = (
+				EB77825719C6D55800F8697A /* JBCalendarDataSourceDelegate.h */,
+				EB77825819C6D55800F8697A /* JBCalendarDate.h */,
+				EB77825919C6D55800F8697A /* JBCalendarDate.m */,
+				EB77825A19C6D55800F8697A /* JBCalendarDelegate.h */,
+				EB77825B19C6D55800F8697A /* JBCalendarLogic.h */,
+				EB77825C19C6D55800F8697A /* JBCalendarLogic.m */,
+				EB77825D19C6D55800F8697A /* JBEventModel.h */,
+				EB77825E19C6D55800F8697A /* JBEventModel.m */,
+				EB77825F19C6D55800F8697A /* JBUnitGridView.h */,
+				EB77826019C6D55800F8697A /* JBUnitGridView.m */,
+				EB77826119C6D55800F8697A /* JBUnitTileView.h */,
+				EB77826219C6D55800F8697A /* JBUnitTileView.m */,
+				EB77826319C6D55800F8697A /* JBUnitView.h */,
+				EB77826419C6D55800F8697A /* JBUnitView.m */,
+				EB77826519C6D55800F8697A /* JBWeekdaysBarView.h */,
+				EB77826619C6D55800F8697A /* JBWeekdaysBarView.m */,
+				EB77826719C6D55800F8697A /* LunarCalendar */,
+				EB77826A19C6D55800F8697A /* NSDate */,
+				EB77826D19C6D55800F8697A /* README */,
+			);
+			path = JBCalendar;
+			sourceTree = "<group>";
+		};
+		EB77826719C6D55800F8697A /* LunarCalendar */ = {
+			isa = PBXGroup;
+			children = (
+				EB77826819C6D55800F8697A /* LunarCalendar.h */,
+				EB77826919C6D55800F8697A /* LunarCalendar.m */,
+			);
+			path = LunarCalendar;
+			sourceTree = "<group>";
+		};
+		EB77826A19C6D55800F8697A /* NSDate */ = {
+			isa = PBXGroup;
+			children = (
+				EB77826B19C6D55800F8697A /* NSDate+Calendar.h */,
+				EB77826C19C6D55800F8697A /* NSDate+Calendar.m */,
+			);
+			path = NSDate;
+			sourceTree = "<group>";
+		};
+		EB77826F19C6D55800F8697A /* LocalFileManager */ = {
+			isa = PBXGroup;
+			children = (
+				EB77827019C6D55800F8697A /* JBBasicFileManager.h */,
+				EB77827119C6D55800F8697A /* JBBasicFileManager.m */,
+				EB77827219C6D55800F8697A /* JBImageFileManager.h */,
+				EB77827319C6D55800F8697A /* JBImageFileManager.m */,
+				EB77827419C6D55800F8697A /* JBPlistFileManager.h */,
+				EB77827519C6D55800F8697A /* JBPlistFileManager.m */,
+			);
+			path = LocalFileManager;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		EB7781E019C6818300F8697A /* FjjCalendar */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EB77821319C6818300F8697A /* Build configuration list for PBXNativeTarget "FjjCalendar" */;
+			buildPhases = (
+				EB7781DD19C6818300F8697A /* Sources */,
+				EB7781DE19C6818300F8697A /* Frameworks */,
+				EB7781DF19C6818300F8697A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = FjjCalendar;
+			productName = FjjCalendar;
+			productReference = EB7781E119C6818300F8697A /* FjjCalendar.app */;
+			productType = "com.apple.product-type.application";
+		};
+		EB77820119C6818300F8697A /* FjjCalendarTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EB77821619C6818300F8697A /* Build configuration list for PBXNativeTarget "FjjCalendarTests" */;
+			buildPhases = (
+				EB7781FE19C6818300F8697A /* Sources */,
+				EB7781FF19C6818300F8697A /* Frameworks */,
+				EB77820019C6818300F8697A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				EB77820819C6818300F8697A /* PBXTargetDependency */,
+			);
+			name = FjjCalendarTests;
+			productName = FjjCalendarTests;
+			productReference = EB77820219C6818300F8697A /* FjjCalendarTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		EB7781D919C6818300F8697A /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0510;
+				ORGANIZATIONNAME = zzw;
+				TargetAttributes = {
+					EB77820119C6818300F8697A = {
+						TestTargetID = EB7781E019C6818300F8697A;
+					};
+				};
+			};
+			buildConfigurationList = EB7781DC19C6818300F8697A /* Build configuration list for PBXProject "FjjCalendar" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = EB7781D819C6818300F8697A;
+			productRefGroup = EB7781E219C6818300F8697A /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				EB7781E019C6818300F8697A /* FjjCalendar */,
+				EB77820119C6818300F8697A /* FjjCalendarTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		EB7781DF19C6818300F8697A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EB77827F19C6D55800F8697A /* README in Resources */,
+				EB77825319C6D54F00F8697A /* weekdaysBarView@2x.png in Resources */,
+				EB7781FD19C6818300F8697A /* Images.xcassets in Resources */,
+				EB7781EF19C6818300F8697A /* InfoPlist.strings in Resources */,
+				EB7781F819C6818300F8697A /* Main.storyboard in Resources */,
+				EB77825219C6D54F00F8697A /* weekdaysBarView.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EB77820019C6818300F8697A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EB77820E19C6818300F8697A /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		EB7781DD19C6818300F8697A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EB77822C19C6846400F8697A /* UIView+Additions.m in Sources */,
+				EB77824319C6920500F8697A /* SecondViewController.m in Sources */,
+				EB7781F519C6818300F8697A /* AppDelegate.m in Sources */,
+				EB77823519C6847400F8697A /* TenyeaBaseNavigationViewController.m in Sources */,
+				EB77827719C6D55800F8697A /* JBCalendarLogic.m in Sources */,
+				EB77827619C6D55800F8697A /* JBCalendarDate.m in Sources */,
+				EB77827D19C6D55800F8697A /* LunarCalendar.m in Sources */,
+				EB77828519C6D5BD00F8697A /* JBSXRCUnitTileView.m in Sources */,
+				EB77828119C6D55800F8697A /* JBImageFileManager.m in Sources */,
+				EB77827B19C6D55800F8697A /* JBUnitView.m in Sources */,
+				EB7781F119C6818300F8697A /* main.m in Sources */,
+				EB77822D19C6846400F8697A /* UIViewExt.m in Sources */,
+				EB77824619C692B000F8697A /* ThirdViewController.m in Sources */,
+				EB77822119C6839600F8697A /* RESideMenu.m in Sources */,
+				EB77827E19C6D55800F8697A /* NSDate+Calendar.m in Sources */,
+				EB77827A19C6D55800F8697A /* JBUnitTileView.m in Sources */,
+				EB77828019C6D55800F8697A /* JBBasicFileManager.m in Sources */,
+				EB77822519C683CC00F8697A /* LeftViewController.m in Sources */,
+				EB77824019C6882300F8697A /* FirstViewController.m in Sources */,
+				EB77828219C6D55800F8697A /* JBPlistFileManager.m in Sources */,
+				EB77827C19C6D55800F8697A /* JBWeekdaysBarView.m in Sources */,
+				EB77827919C6D55800F8697A /* JBUnitGridView.m in Sources */,
+				EB77824B19C6989200F8697A /* Date.m in Sources */,
+				EB77823A19C6853000F8697A /* RootViewController.m in Sources */,
+				EB77822019C6839600F8697A /* RECommonFunctions.m in Sources */,
+				EB77823619C6847400F8697A /* TenyeaBaseViewController.m in Sources */,
+				EB77824E19C6D04400F8697A /* ZeroViewController.m in Sources */,
+				EB77822219C6839600F8697A /* UIViewController+RESideMenu.m in Sources */,
+				EB77827819C6D55800F8697A /* JBEventModel.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EB7781FE19C6818300F8697A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EB77821019C6818300F8697A /* FjjCalendarTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		EB77820819C6818300F8697A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = EB7781E019C6818300F8697A /* FjjCalendar */;
+			targetProxy = EB77820719C6818300F8697A /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		EB7781ED19C6818300F8697A /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EB7781EE19C6818300F8697A /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		EB7781F619C6818300F8697A /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EB7781F719C6818300F8697A /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		EB77820C19C6818300F8697A /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EB77820D19C6818300F8697A /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		EB77821119C6818300F8697A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		EB77821219C6818300F8697A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		EB77821419C6818300F8697A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "FjjCalendar/FjjCalendar-Prefix.pch";
+				INFOPLIST_FILE = "FjjCalendar/FjjCalendar-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		EB77821519C6818300F8697A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "FjjCalendar/FjjCalendar-Prefix.pch";
+				INFOPLIST_FILE = "FjjCalendar/FjjCalendar-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		EB77821719C6818300F8697A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/FjjCalendar.app/FjjCalendar";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "FjjCalendar/FjjCalendar-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "FjjCalendarTests/FjjCalendarTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		EB77821819C6818300F8697A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/FjjCalendar.app/FjjCalendar";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "FjjCalendar/FjjCalendar-Prefix.pch";
+				INFOPLIST_FILE = "FjjCalendarTests/FjjCalendarTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		EB7781DC19C6818300F8697A /* Build configuration list for PBXProject "FjjCalendar" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EB77821119C6818300F8697A /* Debug */,
+				EB77821219C6818300F8697A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EB77821319C6818300F8697A /* Build configuration list for PBXNativeTarget "FjjCalendar" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EB77821419C6818300F8697A /* Debug */,
+				EB77821519C6818300F8697A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		EB77821619C6818300F8697A /* Build configuration list for PBXNativeTarget "FjjCalendarTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EB77821719C6818300F8697A /* Debug */,
+				EB77821819C6818300F8697A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = EB7781D919C6818300F8697A /* Project object */;
+}
