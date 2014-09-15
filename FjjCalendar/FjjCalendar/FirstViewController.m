@@ -19,10 +19,14 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    self.datePicker.date = [Date defaultDate].currentDate;
+    self.title = @"设置";
+    if ([Date defaultDate].currentDate) {
+        self.datePicker.date = [Date defaultDate].currentDate;
+    }
     NSDateFormatter *dateFormatter = [[NSDateFormatter alloc] init];
     [dateFormatter setDateFormat:@"yyyy-MM-dd"];
     NSString *strDate = [dateFormatter stringFromDate: [NSDate date]];
+    
     self.currentTime.text = strDate;
 }
 
@@ -38,7 +42,7 @@
 
 - (IBAction)createAction {
     [Date defaultDate].currentDate = self.datePicker.date;
-    
+    [self.sideMenuViewController setContentViewController:[[UINavigationController alloc] initWithRootViewController:[self.storyboard instantiateViewControllerWithIdentifier:@"zeroViewController"]] animated:NO];
     
 }
 @end

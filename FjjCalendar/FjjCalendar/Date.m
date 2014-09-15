@@ -28,6 +28,9 @@ static Date *sigleton = nil;
     }else{
         t =t - count*6;
     }
+    if (t == 6) {
+        t = 0;
+    }
     /**
      *  设置最近一次中心时间
      */

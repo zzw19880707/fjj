@@ -12,7 +12,8 @@
 #import "NSDate+Calendar.h"
 @interface ZeroViewController ()
 {
-    int todayType;
+    int todayType;//第几个班
+    int weekday;//星期几
 }
 @end
 
@@ -32,15 +33,151 @@
     [self.sideMenuViewController setContentViewController:[[UINavigationController alloc] initWithRootViewController:[self.storyboard instantiateViewControllerWithIdentifier:@"firstViewController"]] animated:NO];
         return ;
     }
-    NSArray *dateArr = @[@"第一个白班",@"第二个白班",@"第三个白班",@"夜班",@"下夜班",@"休息"];
 
     todayType = [[Date defaultDate] getTodayTypebyNowDate:[NSDate date] andCurrentDate:date];
-    self.title = dateArr[todayType];
+    weekday = [NSDate date].weekday;
+    NSString *weekdayString = [self getStringByWeekDay:weekday];
+    NSString *todayTypeString = [self getStringByTodayType];
+    NSString *string = [NSString stringWithFormat:@"\t%@%@",weekdayString,todayTypeString];
     
-    _pn([NSDate date].weekday);
-
+    NSMutableAttributedString *attributeString = [[NSMutableAttributedString alloc] initWithString:string];
+    [attributeString addAttribute:NSForegroundColorAttributeName value:[UIColor grayColor] range:NSMakeRange(0, string.length)];
+    
+    NSString *redWeekdayString ;
+    switch (weekday) {
+        case 1:
+            redWeekdayString = @"星期日";
+            break;
+        case 2:
+            redWeekdayString = @"星期一";
+            break;
+        case 3:
+            redWeekdayString = @"星期二";
+            break;
+        case 4:
+            redWeekdayString = @"星期三";
+            break;
+        case 5:
+            redWeekdayString = @"星期四";
+            break;
+        case 6:
+            redWeekdayString = @"星期五";
+            break;
+        case 7:
+            redWeekdayString = @"星期六";
+            break;
+        default:
+            break;
+    }
+//    红色
+    NSRange redRange = [string rangeOfString:redWeekdayString];
+    [attributeString addAttribute:NSForegroundColorAttributeName value:[UIColor redColor] range:redRange];
+//    绿色
+    NSString *greenString;
+    if (todayType == 0||todayType == 1||todayType == 2) {
+        greenString = @"白班";
+    }else if (todayType == 3){
+        greenString = @"夜班";
+    }else if (todayType == 4){
+        greenString = @"下夜班";
+    }else{
+        greenString = @"休息";
+    }
+    NSRange greenRange = [string rangeOfString:greenString];
+    [attributeString addAttribute:NSForegroundColorAttributeName value:[UIColor greenColor] range:greenRange];
+//    self.textView.font = 
+    self.textView.attributedText = attributeString;
     
 }
+/**
+ *  返回今日是什么班
+ *
+ *  @param weekday 星期几
+ *
+ *  @return
+ */
+-(NSString *)getStringByWeekDay:(int)thisweekday{
+    switch (thisweekday) {
+        case 1://日
+            return @"今天是星期日。";
+            break;
+            case 2://一
+            if (todayType == 0 ||todayType == 1 ||todayType == 2) {
+                return @"今天是星期一,早上七点半上班。";
+            }else{
+                return @"今天是星期一。";
+            }
+            break;
+            case 3://二
+            return @"今天是星期二。";
+            break;
+            case 4://三
+            return @"今天是星期三。";
+            break;
+            case 5://四
+            return @"今天是星期四。";
+            break;
+            case 6://五
+            return @"今天是星期五,下午三点半开会。";
+            break;
+            case 7://六
+            return @"今天是星期六。";
+            break;
+        default:
+            break;
+    }
+    return nil;
+}
 
-
+-(NSString *)getStringByTodayType{
+    NSArray *dateArr = @[@"第一个白班,在二楼上班,",@"第二个白班,在二楼上班,",@"第三个白班,在一楼上班,",@"夜班,",@"八点下夜班",@"休息"];
+    NSMutableString *string  = [[NSMutableString alloc]initWithString:[NSString stringWithFormat:@"%@",dateArr[todayType]]];
+    switch (todayType) {
+        case 0:{//白
+            if (weekday !=2) {//周一
+                [string appendString:[NSString stringWithFormat:@"八点上班,十一点半休息,一点上班，四点下班"]];
+            }else {
+                [string appendString:[NSString stringWithFormat:@"十一点半休息,一点上班，四点下班"]];
+            }
+        }
+            break;
+        case 1://白
+            if (weekday !=2) {//周一
+                [string appendString:[NSString stringWithFormat:@"七点半上班,十一点吃饭,"]];
+            }
+            if (weekday == 6) {//周五
+                [string appendString:@"四点下班"];
+            }else{
+                [string appendString:@"三点半下班"];
+            }
+            break;
+        case 2://白
+            if (weekday !=2) {//周一
+                [string appendString:[NSString stringWithFormat:@"八点上班,十一点半休息,一点上班，四点多下班"]];
+            }else {
+                [string appendString:[NSString stringWithFormat:@"十一点半休息,一点上班，四点多下班"]];
+            }
+            break;
+        case 3://夜
+            if (weekday == 6) {//周五
+                [string appendString:@"三点半上班"];
+            }else{
+                [string appendString:@"四点上班"];
+            }
+            break;
+        case 4://下
+            break;
+        case 5://休
+            break;
+        default:
+            break;
+    }
+    [string appendString:@"。"];
+    return string;
+}
+#pragma mark -
+#pragma mark UITextViewDelegate
+- (BOOL)textViewShouldBeginEditing:(UITextView *)textView{
+    return NO;
+}
 @end

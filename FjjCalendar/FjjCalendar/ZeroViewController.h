@@ -8,6 +8,7 @@
 
 #import "TenyeaBaseViewController.h"
 
-@interface ZeroViewController : TenyeaBaseViewController
+@interface ZeroViewController : TenyeaBaseViewController <UITextViewDelegate>
+@property (strong, nonatomic) IBOutlet UITextView *textView;
 
 @end
