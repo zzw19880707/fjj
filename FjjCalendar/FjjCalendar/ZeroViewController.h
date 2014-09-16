@@ -10,5 +10,6 @@
 
 @interface ZeroViewController : TenyeaBaseViewController <UITextViewDelegate>
 @property (strong, nonatomic) IBOutlet UITextView *textView;
+- (IBAction)logAction:(UIButton *)sender;
 
 @end

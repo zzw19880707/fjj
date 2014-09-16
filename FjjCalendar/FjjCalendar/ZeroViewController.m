@@ -10,6 +10,7 @@
 #import "Date.h"
 #import "FirstViewController.h"
 #import "NSDate+Calendar.h"
+#import "FileUrl.h"
 @interface ZeroViewController ()
 {
     int todayType;//第几个班
@@ -43,6 +44,10 @@
     NSMutableAttributedString *attributeString = [[NSMutableAttributedString alloc] initWithString:string];
     [attributeString addAttribute:NSForegroundColorAttributeName value:[UIColor grayColor] range:NSMakeRange(0, string.length)];
     
+    //    设置字体大小
+    [attributeString addAttribute:NSFontAttributeName  value:FONT(20) range:NSMakeRange(0, string.length)];
+
+//    红色
     NSString *redWeekdayString ;
     switch (weekday) {
         case 1:
@@ -69,7 +74,6 @@
         default:
             break;
     }
-//    红色
     NSRange redRange = [string rangeOfString:redWeekdayString];
     [attributeString addAttribute:NSForegroundColorAttributeName value:[UIColor redColor] range:redRange];
 //    绿色
@@ -85,7 +89,6 @@
     }
     NSRange greenRange = [string rangeOfString:greenString];
     [attributeString addAttribute:NSForegroundColorAttributeName value:[UIColor greenColor] range:greenRange];
-//    self.textView.font = 
     self.textView.attributedText = attributeString;
     
 }
@@ -128,7 +131,11 @@
     }
     return nil;
 }
-
+/**
+ *  返回上班类型
+ *
+ *  @return
+ */
 -(NSString *)getStringByTodayType{
     NSArray *dateArr = @[@"第一个白班,在二楼上班,",@"第二个白班,在二楼上班,",@"第三个白班,在一楼上班,",@"夜班,",@"八点下夜班",@"休息"];
     NSMutableString *string  = [[NSMutableString alloc]initWithString:[NSString stringWithFormat:@"%@",dateArr[todayType]]];
@@ -148,7 +155,7 @@
             if (weekday == 6) {//周五
                 [string appendString:@"四点下班"];
             }else{
-                [string appendString:@"三点半下班"];
+                [string appendString:@"三点下班"];
             }
             break;
         case 2://白
@@ -179,5 +186,12 @@
 #pragma mark UITextViewDelegate
 - (BOOL)textViewShouldBeginEditing:(UITextView *)textView{
     return NO;
+}
+- (IBAction)logAction:(UIButton *)sender {
+    NSMutableDictionary *dictionary = [[NSMutableDictionary alloc]init];
+    [dictionary setObject:@(weekday) forKey:@"weekday"];
+    [dictionary setObject:@(todayType) forKey:@"todayType"];
+    [dictionary setObject:[_textView.attributedText string] forKey:@"content"];
+    
 }
 @end

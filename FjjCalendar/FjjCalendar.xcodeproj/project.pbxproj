@@ -7,6 +7,16 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		EB3821F119C7C8A400F9FA6B /* LogViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EB3821F019C7C8A400F9FA6B /* LogViewController.m */; };
+		EB38220119C7CA1900F9FA6B /* FMDatabase+InMemoryOnDiskIO.m in Sources */ = {isa = PBXBuildFile; fileRef = EB3821F519C7CA1900F9FA6B /* FMDatabase+InMemoryOnDiskIO.m */; };
+		EB38220219C7CA1900F9FA6B /* FMDatabase.m in Sources */ = {isa = PBXBuildFile; fileRef = EB3821F819C7CA1900F9FA6B /* FMDatabase.m */; };
+		EB38220319C7CA1900F9FA6B /* FMDatabaseAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = EB3821FA19C7CA1900F9FA6B /* FMDatabaseAdditions.m */; };
+		EB38220419C7CA1900F9FA6B /* FMDatabasePool.m in Sources */ = {isa = PBXBuildFile; fileRef = EB3821FC19C7CA1900F9FA6B /* FMDatabasePool.m */; };
+		EB38220519C7CA1900F9FA6B /* FMDatabaseQueue.m in Sources */ = {isa = PBXBuildFile; fileRef = EB3821FE19C7CA1900F9FA6B /* FMDatabaseQueue.m */; };
+		EB38220619C7CA1900F9FA6B /* FMResultSet.m in Sources */ = {isa = PBXBuildFile; fileRef = EB38220019C7CA1900F9FA6B /* FMResultSet.m */; };
+		EB38220819C7CA6900F9FA6B /* libsqlite3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = EB38220719C7CA6900F9FA6B /* libsqlite3.dylib */; };
+		EB38220C19C7CAE200F9FA6B /* DataBase.m in Sources */ = {isa = PBXBuildFile; fileRef = EB38220B19C7CAE200F9FA6B /* DataBase.m */; };
+		EB38220F19C7DAD600F9FA6B /* FileUrl.m in Sources */ = {isa = PBXBuildFile; fileRef = EB38220E19C7DAD600F9FA6B /* FileUrl.m */; };
 		EB7781E519C6818300F8697A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EB7781E419C6818300F8697A /* Foundation.framework */; };
 		EB7781E719C6818300F8697A /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EB7781E619C6818300F8697A /* CoreGraphics.framework */; };
 		EB7781E919C6818300F8697A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EB7781E819C6818300F8697A /* UIKit.framework */; };
@@ -63,6 +73,25 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		EB3821EF19C7C8A400F9FA6B /* LogViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LogViewController.h; sourceTree = "<group>"; };
+		EB3821F019C7C8A400F9FA6B /* LogViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LogViewController.m; sourceTree = "<group>"; };
+		EB3821F419C7CA1900F9FA6B /* FMDatabase+InMemoryOnDiskIO.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "FMDatabase+InMemoryOnDiskIO.h"; sourceTree = "<group>"; };
+		EB3821F519C7CA1900F9FA6B /* FMDatabase+InMemoryOnDiskIO.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "FMDatabase+InMemoryOnDiskIO.m"; sourceTree = "<group>"; };
+		EB3821F719C7CA1900F9FA6B /* FMDatabase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDatabase.h; sourceTree = "<group>"; };
+		EB3821F819C7CA1900F9FA6B /* FMDatabase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMDatabase.m; sourceTree = "<group>"; };
+		EB3821F919C7CA1900F9FA6B /* FMDatabaseAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDatabaseAdditions.h; sourceTree = "<group>"; };
+		EB3821FA19C7CA1900F9FA6B /* FMDatabaseAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMDatabaseAdditions.m; sourceTree = "<group>"; };
+		EB3821FB19C7CA1900F9FA6B /* FMDatabasePool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDatabasePool.h; sourceTree = "<group>"; };
+		EB3821FC19C7CA1900F9FA6B /* FMDatabasePool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMDatabasePool.m; sourceTree = "<group>"; };
+		EB3821FD19C7CA1900F9FA6B /* FMDatabaseQueue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDatabaseQueue.h; sourceTree = "<group>"; };
+		EB3821FE19C7CA1900F9FA6B /* FMDatabaseQueue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMDatabaseQueue.m; sourceTree = "<group>"; };
+		EB3821FF19C7CA1900F9FA6B /* FMResultSet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMResultSet.h; sourceTree = "<group>"; };
+		EB38220019C7CA1900F9FA6B /* FMResultSet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMResultSet.m; sourceTree = "<group>"; };
+		EB38220719C7CA6900F9FA6B /* libsqlite3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.dylib; path = usr/lib/libsqlite3.dylib; sourceTree = SDKROOT; };
+		EB38220A19C7CAE200F9FA6B /* DataBase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DataBase.h; sourceTree = "<group>"; };
+		EB38220B19C7CAE200F9FA6B /* DataBase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DataBase.m; sourceTree = "<group>"; };
+		EB38220D19C7DAD600F9FA6B /* FileUrl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FileUrl.h; sourceTree = "<group>"; };
+		EB38220E19C7DAD600F9FA6B /* FileUrl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FileUrl.m; sourceTree = "<group>"; };
 		EB7781E119C6818300F8697A /* FjjCalendar.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FjjCalendar.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EB7781E419C6818300F8697A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		EB7781E619C6818300F8697A /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -148,6 +177,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EB38220819C7CA6900F9FA6B /* libsqlite3.dylib in Frameworks */,
 				EB7781E719C6818300F8697A /* CoreGraphics.framework in Frameworks */,
 				EB7781E919C6818300F8697A /* UIKit.framework in Frameworks */,
 				EB7781E519C6818300F8697A /* Foundation.framework in Frameworks */,
@@ -167,6 +197,51 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		EB3821F219C7CA1900F9FA6B /* FMDB */ = {
+			isa = PBXGroup;
+			children = (
+				EB3821F319C7CA1900F9FA6B /* extra */,
+				EB3821F619C7CA1900F9FA6B /* src */,
+			);
+			path = FMDB;
+			sourceTree = "<group>";
+		};
+		EB3821F319C7CA1900F9FA6B /* extra */ = {
+			isa = PBXGroup;
+			children = (
+				EB3821F419C7CA1900F9FA6B /* FMDatabase+InMemoryOnDiskIO.h */,
+				EB3821F519C7CA1900F9FA6B /* FMDatabase+InMemoryOnDiskIO.m */,
+			);
+			path = extra;
+			sourceTree = "<group>";
+		};
+		EB3821F619C7CA1900F9FA6B /* src */ = {
+			isa = PBXGroup;
+			children = (
+				EB3821F719C7CA1900F9FA6B /* FMDatabase.h */,
+				EB3821F819C7CA1900F9FA6B /* FMDatabase.m */,
+				EB3821F919C7CA1900F9FA6B /* FMDatabaseAdditions.h */,
+				EB3821FA19C7CA1900F9FA6B /* FMDatabaseAdditions.m */,
+				EB3821FB19C7CA1900F9FA6B /* FMDatabasePool.h */,
+				EB3821FC19C7CA1900F9FA6B /* FMDatabasePool.m */,
+				EB3821FD19C7CA1900F9FA6B /* FMDatabaseQueue.h */,
+				EB3821FE19C7CA1900F9FA6B /* FMDatabaseQueue.m */,
+				EB3821FF19C7CA1900F9FA6B /* FMResultSet.h */,
+				EB38220019C7CA1900F9FA6B /* FMResultSet.m */,
+			);
+			path = src;
+			sourceTree = "<group>";
+		};
+		EB38220919C7CAC400F9FA6B /* db */ = {
+			isa = PBXGroup;
+			children = (
+				EB38220A19C7CAE200F9FA6B /* DataBase.h */,
+				EB38220B19C7CAE200F9FA6B /* DataBase.m */,
+			);
+			name = db;
+			path = ..;
+			sourceTree = "<group>";
+		};
 		EB7781D819C6818300F8697A = {
 			isa = PBXGroup;
 			children = (
@@ -189,6 +264,7 @@
 		EB7781E319C6818300F8697A /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				EB38220719C7CA6900F9FA6B /* libsqlite3.dylib */,
 				EB7781E419C6818300F8697A /* Foundation.framework */,
 				EB7781E619C6818300F8697A /* CoreGraphics.framework */,
 				EB7781E819C6818300F8697A /* UIKit.framework */,
@@ -213,8 +289,11 @@
 				EB77824219C6920500F8697A /* SecondViewController.m */,
 				EB77824419C692B000F8697A /* ThirdViewController.h */,
 				EB77824519C692B000F8697A /* ThirdViewController.m */,
+				EB3821EF19C7C8A400F9FA6B /* LogViewController.h */,
+				EB3821F019C7C8A400F9FA6B /* LogViewController.m */,
 				EB77822319C683CC00F8697A /* LeftViewController.h */,
 				EB77822419C683CC00F8697A /* LeftViewController.m */,
+				EB38220919C7CAC400F9FA6B /* db */,
 				EB77824819C6986D00F8697A /* date */,
 				EB7781FC19C6818300F8697A /* Images.xcassets */,
 				EB7781EB19C6818300F8697A /* Supporting Files */,
@@ -225,6 +304,7 @@
 		EB7781EB19C6818300F8697A /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				EB3821F219C7CA1900F9FA6B /* FMDB */,
 				EB77824F19C6D53C00F8697A /* JBCalendar */,
 				EB77822E19C6847400F8697A /* baseViewController */,
 				EB77822619C6846400F8697A /* UIView+Additions */,
@@ -302,6 +382,8 @@
 		EB77824819C6986D00F8697A /* date */ = {
 			isa = PBXGroup;
 			children = (
+				EB38220D19C7DAD600F9FA6B /* FileUrl.h */,
+				EB38220E19C7DAD600F9FA6B /* FileUrl.m */,
 				EB77824919C6989200F8697A /* Date.h */,
 				EB77824A19C6989200F8697A /* Date.m */,
 			);
@@ -501,18 +583,25 @@
 				EB77823519C6847400F8697A /* TenyeaBaseNavigationViewController.m in Sources */,
 				EB77827719C6D55800F8697A /* JBCalendarLogic.m in Sources */,
 				EB77827619C6D55800F8697A /* JBCalendarDate.m in Sources */,
+				EB38220619C7CA1900F9FA6B /* FMResultSet.m in Sources */,
 				EB77827D19C6D55800F8697A /* LunarCalendar.m in Sources */,
 				EB77828519C6D5BD00F8697A /* JBSXRCUnitTileView.m in Sources */,
+				EB38220F19C7DAD600F9FA6B /* FileUrl.m in Sources */,
 				EB77828119C6D55800F8697A /* JBImageFileManager.m in Sources */,
 				EB77827B19C6D55800F8697A /* JBUnitView.m in Sources */,
+				EB38220519C7CA1900F9FA6B /* FMDatabaseQueue.m in Sources */,
 				EB7781F119C6818300F8697A /* main.m in Sources */,
+				EB3821F119C7C8A400F9FA6B /* LogViewController.m in Sources */,
 				EB77822D19C6846400F8697A /* UIViewExt.m in Sources */,
 				EB77824619C692B000F8697A /* ThirdViewController.m in Sources */,
 				EB77822119C6839600F8697A /* RESideMenu.m in Sources */,
+				EB38220219C7CA1900F9FA6B /* FMDatabase.m in Sources */,
 				EB77827E19C6D55800F8697A /* NSDate+Calendar.m in Sources */,
 				EB77827A19C6D55800F8697A /* JBUnitTileView.m in Sources */,
 				EB77828019C6D55800F8697A /* JBBasicFileManager.m in Sources */,
+				EB38220C19C7CAE200F9FA6B /* DataBase.m in Sources */,
 				EB77822519C683CC00F8697A /* LeftViewController.m in Sources */,
+				EB38220119C7CA1900F9FA6B /* FMDatabase+InMemoryOnDiskIO.m in Sources */,
 				EB77824019C6882300F8697A /* FirstViewController.m in Sources */,
 				EB77828219C6D55800F8697A /* JBPlistFileManager.m in Sources */,
 				EB77827C19C6D55800F8697A /* JBWeekdaysBarView.m in Sources */,
@@ -521,9 +610,11 @@
 				EB77823A19C6853000F8697A /* RootViewController.m in Sources */,
 				EB77822019C6839600F8697A /* RECommonFunctions.m in Sources */,
 				EB77823619C6847400F8697A /* TenyeaBaseViewController.m in Sources */,
+				EB38220319C7CA1900F9FA6B /* FMDatabaseAdditions.m in Sources */,
 				EB77824E19C6D04400F8697A /* ZeroViewController.m in Sources */,
 				EB77822219C6839600F8697A /* UIViewController+RESideMenu.m in Sources */,
 				EB77827819C6D55800F8697A /* JBEventModel.m in Sources */,
+				EB38220419C7CA1900F9FA6B /* FMDatabasePool.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -730,6 +821,7 @@
 				EB77821519C6818300F8697A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		EB77821619C6818300F8697A /* Build configuration list for PBXNativeTarget "FjjCalendarTests" */ = {
 			isa = XCConfigurationList;
@@ -738,6 +830,7 @@
 				EB77821819C6818300F8697A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
