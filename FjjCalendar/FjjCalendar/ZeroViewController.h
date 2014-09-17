@@ -8,7 +8,7 @@
 
 #import "TenyeaBaseViewController.h"
 
-@interface ZeroViewController : TenyeaBaseViewController <UITextViewDelegate>
+@interface ZeroViewController : TenyeaBaseViewController <UITextViewDelegate,UIAlertViewDelegate>
 @property (strong, nonatomic) IBOutlet UITextView *textView;
 - (IBAction)logAction:(UIButton *)sender;
 

@@ -60,6 +60,7 @@
 		EB77828119C6D55800F8697A /* JBImageFileManager.m in Sources */ = {isa = PBXBuildFile; fileRef = EB77827319C6D55800F8697A /* JBImageFileManager.m */; };
 		EB77828219C6D55800F8697A /* JBPlistFileManager.m in Sources */ = {isa = PBXBuildFile; fileRef = EB77827519C6D55800F8697A /* JBPlistFileManager.m */; };
 		EB77828519C6D5BD00F8697A /* JBSXRCUnitTileView.m in Sources */ = {isa = PBXBuildFile; fileRef = EB77828419C6D5BD00F8697A /* JBSXRCUnitTileView.m */; };
+		EBFA0FB419C92EBF0074DDD8 /* LogDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EBFA0FB319C92EBF0074DDD8 /* LogDetailViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -170,6 +171,8 @@
 		EB77827519C6D55800F8697A /* JBPlistFileManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JBPlistFileManager.m; sourceTree = "<group>"; };
 		EB77828319C6D5BD00F8697A /* JBSXRCUnitTileView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JBSXRCUnitTileView.h; sourceTree = "<group>"; };
 		EB77828419C6D5BD00F8697A /* JBSXRCUnitTileView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JBSXRCUnitTileView.m; sourceTree = "<group>"; };
+		EBFA0FB219C92EBF0074DDD8 /* LogDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LogDetailViewController.h; sourceTree = "<group>"; };
+		EBFA0FB319C92EBF0074DDD8 /* LogDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LogDetailViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -291,6 +294,8 @@
 				EB77824519C692B000F8697A /* ThirdViewController.m */,
 				EB3821EF19C7C8A400F9FA6B /* LogViewController.h */,
 				EB3821F019C7C8A400F9FA6B /* LogViewController.m */,
+				EBFA0FB219C92EBF0074DDD8 /* LogDetailViewController.h */,
+				EBFA0FB319C92EBF0074DDD8 /* LogDetailViewController.m */,
 				EB77822319C683CC00F8697A /* LeftViewController.h */,
 				EB77822419C683CC00F8697A /* LeftViewController.m */,
 				EB38220919C7CAC400F9FA6B /* db */,
@@ -594,6 +599,7 @@
 				EB3821F119C7C8A400F9FA6B /* LogViewController.m in Sources */,
 				EB77822D19C6846400F8697A /* UIViewExt.m in Sources */,
 				EB77824619C692B000F8697A /* ThirdViewController.m in Sources */,
+				EBFA0FB419C92EBF0074DDD8 /* LogDetailViewController.m in Sources */,
 				EB77822119C6839600F8697A /* RESideMenu.m in Sources */,
 				EB38220219C7CA1900F9FA6B /* FMDatabase.m in Sources */,
 				EB77827E19C6D55800F8697A /* NSDate+Calendar.m in Sources */,

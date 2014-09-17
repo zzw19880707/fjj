@@ -8,6 +8,8 @@
 
 #import "TenyeaBaseViewController.h"
 
-@interface LogViewController : TenyeaBaseViewController
+@interface LogViewController : TenyeaBaseViewController <UITableViewDataSource,UITableViewDelegate,UIAlertViewDelegate>
+- (IBAction)deleteAllLog:(id)sender;
+@property (strong, nonatomic) IBOutlet UITableView *tableView;
 
 @end

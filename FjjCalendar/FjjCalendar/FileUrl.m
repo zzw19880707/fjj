@@ -37,4 +37,36 @@
     FMDatabase *db = [FMDatabase databaseWithPath:[self getDBFile] ];
     return  db;
 }
+
+
++(NSString *)getLogPath {
+    NSString *path = [[self getDocumentsFile] stringByAppendingPathComponent:@"log.plist"];
+    NSFileManager *manager=  [NSFileManager defaultManager];
+
+    if (![manager fileExistsAtPath:path]) {
+        _po(@"log.plist文件不存在");
+        NSArray *arr = [[NSArray alloc]init];
+        [arr writeToFile:path atomically:YES];
+    }
+    return path;
+}
++(BOOL)insertLogInPlist:(NSDictionary *)dictionary{
+    NSString *path = [self getLogPath];
+    NSMutableArray *allArr = [[NSMutableArray alloc]initWithArray:[self selectAllLog]];
+    [allArr insertObject:dictionary atIndex:0];
+    [allArr writeToFile:path atomically:YES];
+    return YES;
+}
++(NSArray *)selectAllLog{
+    NSString *path = [self getLogPath];
+    NSArray *arr = [[NSArray alloc]initWithContentsOfFile:path];
+    return arr;
+}
+
++(void )deleteAllLog{
+    NSString *path = [self getLogPath];
+    NSArray *arr = [[NSArray alloc]init];
+    [arr writeToFile:path atomically:YES];
+}
+
 @end

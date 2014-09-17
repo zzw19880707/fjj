@@ -160,9 +160,9 @@
             break;
         case 2://白
             if (weekday !=2) {//周一
-                [string appendString:[NSString stringWithFormat:@"八点上班,十一点半休息,一点上班，四点多下班"]];
+                [string appendString:[NSString stringWithFormat:@"八点上班,四点多下班"]];
             }else {
-                [string appendString:[NSString stringWithFormat:@"十一点半休息,一点上班，四点多下班"]];
+                [string appendString:[NSString stringWithFormat:@"十一点半休息,一点上班,四点多下班"]];
             }
             break;
         case 3://夜
@@ -187,11 +187,35 @@
 - (BOOL)textViewShouldBeginEditing:(UITextView *)textView{
     return NO;
 }
+#pragma mark -
+#pragma mark UIAlertViewDelegate
 - (IBAction)logAction:(UIButton *)sender {
-    NSMutableDictionary *dictionary = [[NSMutableDictionary alloc]init];
-    [dictionary setObject:@(weekday) forKey:@"weekday"];
-    [dictionary setObject:@(todayType) forKey:@"todayType"];
-    [dictionary setObject:[_textView.attributedText string] forKey:@"content"];
+    UIAlertView *alertView = [[UIAlertView alloc]init];
+    [alertView setTitle:@"那您说呢?"];
+    alertView.delegate = self;
+    alertView.alertViewStyle = UIAlertViewStylePlainTextInput;
+    [alertView  addButtonWithTitle:@"取消"];
+    [alertView addButtonWithTitle:@"确认"];
+    [alertView show];
     
+
+}
+-(void)alertView:(UIAlertView *)alertView clickedButtonAtIndex:(NSInteger)buttonIndex{
+    if (buttonIndex == 1) {
+        NSMutableDictionary *dictionary = [[NSMutableDictionary alloc]init];
+        [dictionary setObject:@(weekday) forKey:@"weekday"];
+        [dictionary setObject:@(todayType) forKey:@"todayType"];
+        [dictionary setObject:[_textView.attributedText string] forKey:@"content"];
+        [dictionary setObject:[NSDate date] forKey:@"nowDate"];
+        UITextField *textField = [alertView textFieldAtIndex:0];
+        if (![textField.text isEqualToString:@""]) {
+            [dictionary setObject:textField.text forKey:@"right"];
+        }else{
+            [dictionary setObject:@"大神没给纠正啊" forKey:@"right"];
+        }
+        [FileUrl insertLogInPlist:dictionary];
+
+        
+    }
 }
 @end

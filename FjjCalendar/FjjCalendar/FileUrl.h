@@ -21,4 +21,9 @@
 //返回数据库文件名
 + (NSString *)getDBFile;
 + (FMDatabase *)getDB;
+
+
++(BOOL)insertLogInPlist:(NSDictionary *)dictionary;
++(NSArray *)selectAllLog;
++(void )deleteAllLog;
 @end
