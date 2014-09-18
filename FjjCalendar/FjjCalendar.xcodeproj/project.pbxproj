@@ -529,6 +529,9 @@
 				LastUpgradeCheck = 0510;
 				ORGANIZATIONNAME = zzw;
 				TargetAttributes = {
+					EB7781E019C6818300F8697A = {
+						DevelopmentTeam = S77DVRK9SU;
+					};
 					EB77820119C6818300F8697A = {
 						TestTargetID = EB7781E019C6818300F8697A;
 					};
@@ -745,11 +748,14 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "FjjCalendar/FjjCalendar-Prefix.pch";
 				INFOPLIST_FILE = "FjjCalendar/FjjCalendar-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "73848fb1-30f8-4406-9621-f5aa3ba0b57d";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -759,11 +765,14 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "FjjCalendar/FjjCalendar-Prefix.pch";
 				INFOPLIST_FILE = "FjjCalendar/FjjCalendar-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "73848fb1-30f8-4406-9621-f5aa3ba0b57d";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;

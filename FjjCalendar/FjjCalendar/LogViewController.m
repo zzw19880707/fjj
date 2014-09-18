@@ -31,7 +31,6 @@
     [super viewDidLoad];
     self.title = @"出错日志";
     _dataArr = [FileUrl selectAllLog];
-    _po(_dataArr);
     [_tableView reloadData];
 }
 

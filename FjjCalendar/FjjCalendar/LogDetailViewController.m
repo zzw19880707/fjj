@@ -52,7 +52,7 @@
         }
         _weekdayLabel.text = weekdayStr;
     }
-    NSArray *dateArr = @[@"第一个白班",@"第二个白班",@"第三个白班",@"夜班,",@"下夜",@"休息"];
+    NSArray *dateArr = @[@"第一个白班",@"第二个白班",@"第三个白班",@"夜班",@"下夜",@"休息"];
     _typeLabel.text = dateArr[[[_dic objectForKey:@"todayType"] intValue]];
     
     _contentTextView.text = [_dic objectForKey:@"content"];

@@ -39,7 +39,12 @@
     weekday = [NSDate date].weekday;
     NSString *weekdayString = [self getStringByWeekDay:weekday];
     NSString *todayTypeString = [self getStringByTodayType];
-    NSString *string = [NSString stringWithFormat:@"\t%@%@",weekdayString,todayTypeString];
+    NSString *string;
+    if (todayType ==0 &&(weekday ==1||weekday == 7)) {
+        string = [NSString stringWithFormat:@"\t%@%@(今天可以休息半天哦!)",weekdayString,todayTypeString];
+    }else{
+        string = [NSString stringWithFormat:@"\t%@%@",weekdayString,todayTypeString];
+    }
     
     NSMutableAttributedString *attributeString = [[NSMutableAttributedString alloc] initWithString:string];
     [attributeString addAttribute:NSForegroundColorAttributeName value:[UIColor grayColor] range:NSMakeRange(0, string.length)];

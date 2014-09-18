@@ -20,14 +20,18 @@
 {
     [super viewDidLoad];
     self.title = @"设置";
-    if ([Date defaultDate].currentDate) {
-        self.datePicker.date = [Date defaultDate].currentDate;
-    }
     NSDateFormatter *dateFormatter = [[NSDateFormatter alloc] init];
     [dateFormatter setDateFormat:@"yyyy-MM-dd"];
-    NSString *strDate = [dateFormatter stringFromDate: [NSDate date]];
+
+    if ([Date defaultDate].currentDate) {
+        self.datePicker.date = [Date defaultDate].currentDate;
+        self.currentTime.text = [dateFormatter stringFromDate:[[Date defaultDate] currentDate]];
+    }else{
+        NSString *strDate = [dateFormatter stringFromDate: [NSDate date]];
+        self.currentTime.text = strDate;
+        self.datePicker.date = [NSDate date];
+    }
     
-    self.currentTime.text = strDate;
 }
 
 

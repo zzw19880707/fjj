@@ -9,4 +9,5 @@
 #import "TenyeaBaseViewController.h"
 
 @interface SecondViewController : TenyeaBaseViewController  <UIAlertViewDelegate>
+@property (strong, nonatomic) IBOutlet UICollectionView *collectionView;
 @end
